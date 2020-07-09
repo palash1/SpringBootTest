@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +11,12 @@ public class TestController {
 	
 	@GetMapping("/user")
 	public String getUser() {
-		return "XYZ12345906666888";
+		try {
+			return "Output-"+InetAddress.getLocalHost().getHostName();
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return e.getMessage();
+		}
 	}
-
 }
