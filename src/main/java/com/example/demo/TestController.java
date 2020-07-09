@@ -8,7 +8,7 @@ public class TestController {
 	
 	@GetMapping("/user")
 	public String getUser() {
-		return "XYZ1234590";
+		return "XYZ12345906666";
 	}
 
 }
