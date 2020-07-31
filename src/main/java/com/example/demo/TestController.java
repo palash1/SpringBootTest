@@ -12,7 +12,7 @@ public class TestController {
 	@GetMapping("/user")
 	public String getUser() {
 		try {
-			return "Output-"+InetAddress.getLocalHost().getHostName();
+			return "Output-Change-"+InetAddress.getLocalHost().getHostName();
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
