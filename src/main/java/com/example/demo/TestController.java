@@ -13,6 +13,11 @@ public class TestController {
 	public String index() {
 		return "OK";
 	}
+
+	@GetMapping("/abc")
+	public String abc() {
+		return "Abc";
+	}
 	@GetMapping("/user")
 	public String getUser() {
 		try {
