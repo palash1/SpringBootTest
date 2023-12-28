@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-
-	@GetMapping("/abc")
-	public String abc() {
-		return "Abc";
-	}
 	@GetMapping("/user")
 	public String getUser() {
 		try {
