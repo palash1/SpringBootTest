@@ -14,6 +14,11 @@ public class TestController {
 		return "N1";
 	}
 
+	@GetMapping("/m2")
+	public String m2() {
+		return "N2";
+	}
+
 	@GetMapping("/")
 	public String index() {
 		return "OK";
