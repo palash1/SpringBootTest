@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
+	@GetMapping("/m1")
+	public String m1() {
+		return "N1";
+	}
+
 	@GetMapping("/")
 	public String index() {
 		return "OK";
