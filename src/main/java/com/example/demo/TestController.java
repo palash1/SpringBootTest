@@ -14,10 +14,15 @@ public class TestController {
 		return "OK";
 	}
 
+	@GetMapping("/ww")
+	public String index1() {
+		return "WW";
+	}
+
 	@GetMapping("/user")
 	public String getUser() {
 		try {
-			return "Output-Change-"+InetAddress.getLocalHost().getHostName();
+			return "Output-Change12-"+InetAddress.getLocalHost().getHostName();
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
