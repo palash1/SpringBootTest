@@ -11,9 +11,7 @@ public class TestController {
 
 	@GetMapping("/")
 	public String index() {
-		//1
-		//2
-		return "OK1234";
+		return "OK12344";
 	}
 
 	@GetMapping("/ww")
